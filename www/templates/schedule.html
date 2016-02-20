@@ -1,0 +1,53 @@
+<ion-view view-title="Schedule">
+
+     
+<img src="img/book-search2.jpg" style="position:relative;top:90px;height:17%;width:100%">
+<ion-content>
+<button class="button button-assertive" style="width:100%;height:10%;" ng-click="down()">View full timetable</button>
+  <div class="list" style="position:relative;top:18px;padding:0px;border-bottom:none">
+        
+  <label class="item item-input item-select" style="border:none">
+    <div class="input-label">
+      <b id="week-day"><span style="color:#22313F">7 A : </span>Today</b>
+    </div>
+    <select ng-model="days" ng-change="showschedule()">
+      <option>Monday</option>
+      <option selected>Tuesday</option>
+      <option>Wednesday</option>
+      <option>Thursday</option>
+      <option>Friday</option>
+      <option>Saturday</option>
+    </select>
+  </label>
+
+</div>
+            <ion-list ng-show="flag">
+  <ion-item ng-repeat="s in schedule">
+  
+
+    
+      
+      	<b>{{s.time}}</b>
+      
+      
+      <div class="list">
+      <a class="item item-avatar" href="#" style="border:none">
+      <img ng-src="{{s.imgurl}}">
+      <h2 style="color:#D35400">{{s.sub}}</h2>
+      <p style="color:blue">{{s.fac}}</p>
+    </a>
+  </div>
+
+  
+      
+    
+
+  </ion-item>
+</ion-list>
+
+
+ </ion-content>
+
+
+
+</ion-view>

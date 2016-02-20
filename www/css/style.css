@@ -1,0 +1,270 @@
+/* Empty. Add your own CSS if you like */
+.bar.bar-stable .title
+{
+	color:#ffffff;
+	text-align: left;
+}
+input:focus
+{
+	border-color: #22313F;
+}
+#my-side-menu
+{
+	font-size: 20px;
+}
+#home-icons>.col>i{
+	font-size:60px;
+	display:block;
+	/*text-align: center*/
+}
+#home-icons>.col{
+
+	border:1px solid #f0f0f0;
+	text-align: center;
+	border-top:none;
+
+}
+#home-icons>.col>p{
+	padding:5px;
+}
+
+
+
+#home-icons-2>.col>i{
+	font-size:60px;
+	display:block;
+	/*text-align: center*/
+}
+#home-icons-2>.col{
+
+	border:1px solid #f0f0f0;
+	text-align: center;
+	border-bottom:none;
+
+
+
+}
+#home-icons-2>.col>p{
+	padding:5px;
+}
+
+
+.bar.bar-stable
+{
+	background-color: #22313F;
+	border:none;
+
+}
+ion-tabs.tabs-color-active-positive .tab-item 
+{
+	color:#BDC3C7;
+}
+div.tab-nav.tabs
+{
+	position:absolute;
+	top:42px;
+	border-bottom-color: #22313F;
+	border-bottom-style: 2px solid #D91E18;
+	border-top-color:#22313F;
+	background-color: #22313F;
+	
+	
+}
+span.tab-title.ng-binding
+{
+	vertical-align: super;
+}
+a.subdued
+{
+	color:black;
+}
+#card-buttons
+{
+	background-color: #f8f8f8;
+}
+.tabs
+{
+	color:#ffffff;
+}
+#card-buttons>col
+{
+	border-color: black
+}
+#recommendations-content
+{
+	position: absolute;
+	top:240px;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated
+{
+	color:#ffffff;
+}
+.tabs
+{
+	border-color:#ffffff;
+}
+/*ion-content.scroll-content.ionic-scroll.overflow-scroll.has-header.has-tabs
+{
+	position: absolute;
+	top:200px;
+	z-index:2;
+}
+.overflow-scroll .scroll
+{
+	position: absolute;
+	top:180px;
+	z-index:20;
+}
+
+div.scroll{
+	position:absolute;
+	top:180px;
+	z-index:2;
+}
+img
+{
+	z-index:12;
+}*/
+
+div.item
+{
+	padding-bottom:4px;
+}
+.list
+{
+	padding:2px;
+}
+div.item.item-body
+{
+	border:none;
+}
+#account-content
+{
+   position: absolute;
+   top:90px;
+}
+#you-content
+{
+	background-color: #f8f8f8;
+	color:#3A539B;
+	font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+	font-size:15px;
+	position: absolute;
+	top:40px;
+}
+#you-content.row.col
+{
+	border-bottom:1px solid black;
+}
+#recommendations-button
+{
+	font-weight: bolder;
+	font-size:15px;
+
+}
+#recommendations-list
+{
+	padding:0px;
+	margin: 6px;
+}
+#recommendations-list-body
+{
+	/*background-color: #ECECEC*/
+}
+#search-row
+{
+	position: relative;
+	top:50px;
+}
+#search-bar
+{
+	position: relative;
+	top:20px;
+}
+#search-bar.list.list-inset
+{
+	border:none;
+}
+#search-content
+{
+	border:none;
+	position: relative;
+	top:80px;
+	
+}
+#search-list
+{
+	position: relative;
+	top:0px;
+	border:none;
+	background-color: #f8f8f8
+}
+#search-item
+{
+	padding:1px;
+	background-color: #f8f8f8
+
+	
+}
+#search-thumbnail
+{
+	border:none;
+	background-color: #f8f8f8
+
+}
+button.back-button.buttons.button-clear.header-item
+{
+	color:#ffffff;
+}
+#profile-name{
+	font-size: 20px
+}
+#profile-usn{
+	
+	font-size:18px;
+}
+/*#search-tabs.item.tabs.tabs-secondary.tabs-icon-left
+{
+	color:black;
+	background-image: linear-gradient(0deg, #000000, #000000 50%, transparent 50%);
+}*/
+
+
+.has-header
+{
+    position: absolute;
+	top:180px;
+}
+.row>.col>h2{
+	color:#D35400;
+
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes slideInSmooth {
+  0% {
+    -webkit-transform: translate3d(-100%,0,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+}
+
+
+.slide-in{
+   -webkit-animation: slideInSmooth ease-in 1; 
+  animation: slideInSmooth ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+}

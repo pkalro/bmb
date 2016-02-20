@@ -1,0 +1,71 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Search">
+<div class="row" id="search-row">
+    
+         <div class="col col-80">
+               <div class="list list-inset" id="search-bar">
+  <label class="item item-input">
+   
+    <input type="text" placeholder="Search(book or author)" ng-model="search.term" style="border:none">
+  </label>
+  
+</div>
+         </div>
+       <div class="col col-20">
+       <button class="button icon ion-search" ng-click="search()" style="position:relative;top:40px"></button>
+       
+       </div>  
+   
+  </div>
+
+  <p class="subdued" style="position:relative;top:70px;margin-left:10px;">{{count}}</p>
+  <ion-content class="has-header" scroll="true">
+  
+
+  <ion-list id="search-list">
+  <ion-item collection-repeat="r in results" id="search-item">
+  
+    <a class="item item-thumbnail-left" id="search-thumbnail">
+      
+
+        
+      <img src="img/book-recommendation.jpg">
+        
+               <b>{{r.name}}</b>
+       <p class="subdued"><span style="color:black">Author : </span>{{r.author}}</p>
+       <p class="subdued"><span style="border-style:1px solid gray;background-color:#f8f8f8;color:blue">{{r.publication}}</span></p>
+     
+     
+
+       
+    
+
+      
+
+      
+    </a>
+     <div class="item tabs tabs-secondary tabs-icon-left" id="search-tabs">
+    <a class="tab-item" href="#">
+      <i class="icon ion-briefcase" style="color:blue"></i>
+      <span style="color:black;font-size:15px">Reserve</span>
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-ios-star" style="color:blue"></i>
+      <span style="color:black;font-size:15px">Favorite</span>
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-ios-cart" style="color:blue"></i>
+      <span style="color:black;font-size:15px">Add to cart</span>
+    </a>
+  </div>
+
+</ion-list>
+    
+  </ion-content>
+
+</ion-view>

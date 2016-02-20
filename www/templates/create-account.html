@@ -1,0 +1,22 @@
+<ion-view view-title="Log in">
+
+     <button class="button button-assertive" style="position:relative;top:90px;width:100%;background-color:#d34836;border-radius:0px"><i class ="ion-social-googleplus" style="font-size:20px" ng-click="googlelogin()"></i>   Log in using Google+</button>
+
+     <button class="button button-assertive" style="position:relative;top:90px;width:100%;background-color:#3b5998;border-radius:0px" ng-click="facebookSignIn()"><i class="ion-social-facebook" style="font-size:20px"></i>   Log in using Facebook</button>
+
+    <p class="subdued" style="text-align:center;position:relative;top:100px">OR</p>
+
+    <div class="list list-inset" style="position:relative;top:100px">
+  <label class="item item-input">
+    <input type="text" placeholder="Email Address or usn" ng-model='usn'>
+  </label>
+  <label class="item item-input">
+    <input type="password" placeholder="Password" ng-model='password'>
+  </label>
+</div>
+
+<button class="button button-positive" style="position:relative;top:100px;width:93%;left:13px" ng-click="login()">SIGN IN</button>
+
+<p style="position:relative;top:130px;left:22%">Don't have an account?<a ui-sref="tab.sign-up"><span style="color:#000000;font-weight:bold">Sign up</span></a></p>
+
+</ion-view>

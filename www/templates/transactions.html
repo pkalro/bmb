@@ -1,0 +1,29 @@
+<ion-view view-title="Transactions">
+     <div class="row" style="position:relative;top:100px">
+              <div class="col col-50">
+                  <h2 style="text-align:right;">Fine :</h2>
+              </div>
+              <div class="col col-50">
+                  <h2>&#x20B9 <span id="fine-span">0</span></h2>
+
+              </div>
+
+     </div>
+      <p class="subdued" style="position:relative;top:90px;margin-left:10px;font-size:20px"><i class="ion-clock"></i> &nbspTransactions</p>
+     <ion-content>
+            <ion-list>
+  <ion-item collection-repeat="t in transactions" style="background-color:#f8f8f8">
+    <a class="item item-avatar" href="#">
+      <img ng-src="{{transactionsdp}}">
+      <h2>{{t.name}}</h2>
+      <p>{{t.author}}</p>
+      <p>Issue-date: {{t.issued}}</p>
+      <p>Return-date: {{t.returns}}</p>
+    </a>
+  </ion-item>
+</ion-list>
+
+
+ </ion-content>
+
+</ion-view>

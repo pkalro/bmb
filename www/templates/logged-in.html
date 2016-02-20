@@ -1,0 +1,87 @@
+<ion-view view-title="Home" hide-back-button="true">
+
+       <ion-nav-buttons side="left">
+
+      <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-show="menuButton" style="color:#FFFFFF"></button>
+    </ion-nav-buttons>
+   
+              <div class="list" style="position:relative;top:90px;background-color:#DADFE1">
+
+                            <a class="item item-thumbnail-left" href="#">
+      <img ng-src="{{user.imgurl}}" id="profile-dp">
+      <h2 id="profile-name"><b>Pranay V Kalro</b></h2>
+      <p id="profile-usn">1DS12CS067</p>
+      <p style="color:#ef473a">Fine : &#x20B9<span id="home-fine">0</span></p>
+      
+      <div class="row" style="padding:0px">
+        <div class="col">
+                <p style="text-align:center;color:#22313F">7 A</p>
+
+        </div>
+        <div class="col">
+                <p style="text-align:center;color:#22313F">B.E</p>
+                
+        </div>
+        <div class="col">
+                <p style="text-align:center;color:#22313F">CSE</p>
+                
+        </div>
+        <div class="col">
+                <p style="text-align:center;background-color:#f8f8f8;color:blue"><i class="ion-edit"></i>    Edit </p>
+                
+        </div>
+
+      </div>
+    </a>
+
+              </div>
+ <img src="img/book-recommendation3.jpg" style="width:100%;height:20%;position:relative;top:70px"/>
+
+              <div class="row" id="home-icons" style="position:relative;top:70px">
+                     <div class="col" style="color:#444" ng-click="transactions()">
+                     	
+                             <i class="icon ion-compose"></i>
+    <p>Transactions</p>
+</a>
+                     </div>
+                     <div class="col" style="color:#33cd5f">
+ <i class="icon ion-calculator"></i>
+    <p>Attendance</p>
+    
+
+                     </div>
+                     <div class="col" style="color:#D35400" ng-click="schedule()">
+<i class="icon ion-university"></i>
+    <p>Schedule</p>
+   
+                     </div>
+
+
+              </div>
+
+               <div class="row" id="home-icons-2" style="position:relative;top:70px">
+                     <div class="col" style="color:#387ef5" ng-click="assignments()">
+                            <i class="icon ion-ios-book"></i>
+    <p>Assignments</p>
+                     </div>
+                     
+                     <div class="col" style="color:#ef473a">
+ <i class="icon ion-bookmark"></i>
+    <p>Issued books</p>
+   
+                     </div>
+
+                     <div class="col" style="color:#22313F" ng-click="search()">
+ <i class="icon ion-search"></i>
+    <p>Search Library</p>
+    
+   
+                     </div>
+
+
+              </div>
+
+
+         
+
+</ion-view>
