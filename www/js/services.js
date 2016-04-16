@@ -114,12 +114,13 @@ angular.module('starter.services', [])
     returns:'27-07-2015 13:45:54' 
   }];
   var schedule = [     // section:'7-A',
-      {time:'9:00 A.M-10:00 A.M',sub:'OOMD',fac:'Arbind Gupta',imgurl:'img/adam.jpg'},
+     /* {time:'9:00 A.M-10:00 A.M',sub:'OOMD',fac:'Arbind Gupta',imgurl:'img/adam.jpg'},
       {time:'10:00 A.M-11.00 A.M',sub:'Ecs',fac:'Shubha Bhat',imgurl:'img/ben.png'},
       {time:'11:15 A.M-12.15 P.M',sub:'PW',fac:'Kusuma',imgurl:'img/max.png'},
       {time:'12:15 P.M-1:15 P.M',sub:'ACA',fac:'Rashmi S R',imgurl:'img/mike.png'},
       {time:'2:00 P.M-3:00 P.M',sub:'Java',fac:'Poornima A',imgurl:'img/perry.png'},
-      {time:'3:00 P.M-4:00 P.M',sub:'C# and .Net',fac:'Shashidar',imgurl:'img/pravdp.jpg'}
+      {time:'3:00 P.M-4:00 P.M',sub:'C# and .Net',fac:'Shashidar',imgurl:'img/pravdp.jpg'},
+      {time:'3:00 P.M-4:00 P.M',sub:'C# and .Net',fac:'Shashidar',imgurl:'img/pravdp.jpg'}*/
   ];
 
   return {
@@ -145,6 +146,10 @@ angular.module('starter.services', [])
     },
     getschedule:function(){
       return schedule;
+    },
+    setschedule:function(result){
+      for(var i =0;i<result.length;i++)
+        schedule[i] = result[i];
     }
   };
 });

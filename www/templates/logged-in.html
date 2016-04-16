@@ -15,7 +15,7 @@
       
       <div class="row" style="padding:0px">
         <div class="col">
-                <p style="text-align:center;color:#22313F">7 A</p>
+                <p style="text-align:center;color:#22313F">{{user.sem}}&nbsp{{user.section}}</p>
 
         </div>
         <div class="col">
@@ -23,7 +23,7 @@
                 
         </div>
         <div class="col">
-                <p style="text-align:center;color:#22313F">CSE</p>
+                <p style="text-align:center;color:#22313F">{{user.course}}</p>
                 
         </div>
         <div class="col">
@@ -44,7 +44,7 @@
     <p>Transactions</p>
 </a>
                      </div>
-                     <div class="col" style="color:#33cd5f">
+                     <div class="col" style="color:#33cd5f" ng-click="attendance()">
  <i class="icon ion-calculator"></i>
     <p>Attendance</p>
     
@@ -65,7 +65,7 @@
     <p>Assignments</p>
                      </div>
                      
-                     <div class="col" style="color:#ef473a">
+                     <div class="col" style="color:#ef473a" ng-click="issued_books()">
  <i class="icon ion-bookmark"></i>
     <p>Issued books</p>
    

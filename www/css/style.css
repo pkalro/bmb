@@ -8,6 +8,14 @@ input:focus
 {
 	border-color: #22313F;
 }
+.item.item-radio.ng-valid
+{
+	border:none;
+}
+.radio-content
+{
+	border:none;
+}
 #my-side-menu
 {
 	font-size: 20px;
@@ -53,6 +61,7 @@ input:focus
 {
 	background-color: #22313F;
 	border:none;
+	
 
 }
 ion-tabs.tabs-color-active-positive .tab-item 

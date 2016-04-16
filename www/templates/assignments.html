@@ -6,24 +6,24 @@
 <div class="list card" ng-repeat="a in assignments" style="background-color:#f8f8f8">
 
   <div class="item item-avatar">
-    <img src="img/ben.png">
+    <img ng-src="{{a.imgurl}}">
     <h2 class="dark">{{a.assignment_name}}</h2>
-    <p class="assertive">No of questions : {{a.num_of_q}}</p>
+    <p class="assertive">No of questions : {{a.no_of_questions}}</p>
+    <p class="assertive">Posted by : {{a.name}}</p>
 
   </div>
 
-  <div class="item item-image">
+  <!--<div class="item item-image">
     <img ng-src="{{a.assignment_url}}" style="max-height:200px;" ng-click="down(a.assignment_url)">
-  </div>
+  </div>-->
 <div class="row">
   <div class="col">
     
-    <p class="positive">Assignment no . {{a.assignment_num}}</p>
+    <p class="assertive">Subject . {{a.subject_code}}</p>
 </div>
  <div class="col">
-    
-   <p ng-show="a.submitted"><i class="ion-checkmark-round balanced"></i>&nbsp Submitted</p>
-   <p ng-show="a.notsubmitted"><i class="ion-close-round assertive"></i>&nbsp Submission pending</p>
+    <p class="positive" ng-click="down(a.assignment_url)"><i class="ion-arrow-down-c"></i>&nbsp &nbsp Download</p>
+   
 </div>
  </div>
 

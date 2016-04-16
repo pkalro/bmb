@@ -12,13 +12,13 @@
   
 
   <ion-content scroll="true" id="recommendations-content">
-     <div class="list card" ng-repeat="r in recommendations" id="recommendations-list">
-      <div class="item item-divider" style="text-align:center;border:none;"><span style="color:#3498DB;font-weight:bold">{{r.name}}</span></div>
+     <div class="list card" ng-repeat="s in subjects" id="recommendations-list">
+      <div class="item item-divider" style="text-align:center;border:none;"><span style="color:#3498DB;font-weight:bold">{{s.subject_name}}</span></div>
       <div class="item item-body" id="recommendations-list-body">
         <div class="row">
           <div class="col col-40" style="padding:0px">
             <a class="item item-thumbnail-left" style="padding:0px">
-               <img ng-src="{{r.face}}">
+               <img ng-src="{{s.imgurl}}">
              </a>
         
         
@@ -27,16 +27,16 @@
         </div>
         <div class="col col-40">
                <div style="text-align:left;display:block">
-          <b>{{r.fac}}</b>
+          <b>{{s.name}}</b>
         </div>
         <div style="text-align:left">
-         <p>7th Sem</p>
-         <p class="subdued" style="color:green"><b>Available </b><i class="ion-unlocked" style="color:black"></i></p>
+         <p>{{s.sem}}th Sem</p>
+         <p class="subdued" style="color:green"><b>{{s.subject_code}}</b></p>
         </div>
             <!--free space-->
         </div>
         <div class="col col-20">
-          <button class="button button-calm" style="height:20px;border-radius:1px"><span id="recommendations-button">BOOK</span></button>
+          <button class="button button-calm" style="line-height:2px;border-radius:1px"><span id="recommendations-button">Syllabus</span></button>
         </div>
 
       </div>

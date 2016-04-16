@@ -39,10 +39,13 @@
                <b>{{r.name}}</b>
        <p class="subdued"><span style="color:black">Author : </span>{{r.author}}</p>
        <p class="subdued"><span style="border-style:1px solid gray;background-color:#f8f8f8;color:blue">{{r.publication}}</span></p>
-     
-     
 
-       
+       <div ng-if="r.availability==1">
+    <i class="ion-unlocked"></i>&nbsp<span class="balanced"> Available</span>
+</div>
+       <div ng-if="r.availability==0">
+    <i class="ion-locked"></i>&nbsp <span class="assertive">Not Available</span>
+</div>
     
 
       
@@ -50,18 +53,11 @@
       
     </a>
      <div class="item tabs tabs-secondary tabs-icon-left" id="search-tabs">
-    <a class="tab-item" href="#">
+    <a class="tab-item" href="#" ng-click="reserve(r.name,r.author,r.publication,r._id,r.availability)" ng-attr-id="{{r._id}}">
       <i class="icon ion-briefcase" style="color:blue"></i>
-      <span style="color:black;font-size:15px">Reserve</span>
+      <span style="color:black;font-size:15px" >Reserve</span>
     </a>
-    <a class="tab-item" href="#">
-      <i class="icon ion-ios-star" style="color:blue"></i>
-      <span style="color:black;font-size:15px">Favorite</span>
-    </a>
-    <a class="tab-item" href="#">
-      <i class="icon ion-ios-cart" style="color:blue"></i>
-      <span style="color:black;font-size:15px">Add to cart</span>
-    </a>
+   
   </div>
 
 </ion-list>
