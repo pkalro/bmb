@@ -665,7 +665,7 @@ $ionicPlatform.ready(function() {
    { 
     $scope.user={};
     $scope.user = JSON.parse(window.localStorage['id']);
-   $scope.user.imgurl=$rootScope.imgurlreturned;
+   $scope.user.imgurl=JSON.parse(window.localStorage['id']).imgurl;
     $scope.menuButton=true;
 
     $ionicSideMenuDelegate.canDragContent(true);
